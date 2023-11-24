@@ -1,0 +1,167 @@
+body{
+    /* background-image: url("https://i.pinimg.com/originals/72/3f/0c/723f0c5850d9a28942ba6ef320cd7afd.gif"); */
+    background-image: url("https://i.pinimg.com/originals/ed/a4/3a/eda43aca52541b9799b0b81b2fb47ddd.gif");
+    max-width: 100%;
+    background-size: cover;
+    font-family: "Nunito" , Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#logo-brand{
+    max-width: 100px;
+    height: auto;
+}
+
+.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.2) !important; /* Warna latar belakang dengan tingkat transparansi (0.5) */
+  }
+  
+  
+  .transparent-navbar.navbar-light .navbar-nav .nav-link {
+    color: rgb(221, 204, 250) !important; /* Mengubah warna teks menjadi putih atau sesuai kebutuhan Anda */
+  }
+  
+  .transparent-navbar .navbar-toggler-icon {
+    background-color:  rgb(229, 220, 249) !important; /* Mengubah warna ikon toggler menjadi putih atau sesuai kebutuhan Anda */
+  }
+
+.navbar {
+    font-family: "Dosis";
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+/* Link button styles */
+.navbar-nav .nav-link {
+    color: rgb(221, 204, 250); /* Warna teks tombol */
+    transition: color 0.3s; /* Efek transisi warna saat hover */
+  }
+  
+.navbar-nav .nav-link:hover {
+    color: #f6ff78; /* Warna saat tombol dihover */
+  }
+  
+.navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:focus {
+    color: #7535dc; /* Warna saat tombol diklik atau aktif */
+  }
+.card {
+    margin: 40px 60px;
+    font-family: "Nunito";
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+.facts {
+    padding-bottom: 30px;
+  }
+  
+  .facts .count-box {
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .facts .count-box i {
+    display: block;
+    font-size: 44px;
+    color: #149ddd;
+    float: left;
+    line-height: 0;
+  }
+  
+  .facts .count-box span {
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: #050d18;
+    margin-left: 60px;
+  }
+  
+  .facts .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #122f57;
+  }
+  
+  .facts .count-box a {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: rgb(44, 11, 134);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .facts .count-box a:hover {
+    color: #671f97;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-weight: normal;
+    font-size: 120%;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .filter-menu {
+    margin-bottom: 20px;
+  }
+  
+  .filter-menu li {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .filter-menu li:hover,
+  .filter-menu li.current {
+    background: #2980b9;
+  }
+  
+  .filter-item li {
+    width: 50%;
+    padding: 2px;
+    float: left;
+  }
+  
+  .filter-item li.active {
+    width: 50%;
+    padding: 2px;
+    transition: all 0.5s ease;
+  }
+  
+  .filter-item li.delete {
+    width: 0%;
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .filter-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+    

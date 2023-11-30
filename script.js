@@ -77,15 +77,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
   
-document.addEventListener("DOMContentLoaded", function () {
-  let filterItems = document.querySelectorAll('.filter-item li');
+// document.addEventListener("DOMContentLoaded", function () {
+//   let filterItems = document.querySelectorAll('.filter-item li');
 
-  filterItems.forEach(item => {
-      item.addEventListener('click', function () {
-          let link = item.getAttribute('data-link');
-          if (link) {
-              window.open(link, '_blank');
-          }
-      });
-  });
-});
+//   filterItems.forEach(item => {
+//       item.addEventListener('click', function () {
+//           let link = item.getAttribute('data-link');
+//           if (link) {
+//               window.open(link, '_blank');
+//           }
+//       });
+//   });
+// });
+
+
+
+function startHover(card) {
+  card.classList.add('hover');
+}
+
+function endHover(card) {
+  card.classList.remove('hover');
+}
+
+function flipCard(card) {
+  card.classList.toggle('flipped');
+}
+

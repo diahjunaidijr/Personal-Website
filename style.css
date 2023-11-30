@@ -61,8 +61,11 @@ body{
 .card-title, .card-text {
   color: rgb(255, 255, 255);
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.8), 1px -1px 1px rgba(0, 0, 0, 0.8), -1px 1px 1px rgba(0, 0, 0, 0.8), 1px 1px 1px rgba(0, 0, 0, 0.8);
+ 
 }
-
+.card-title {
+  font-weight: 900;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -253,4 +256,28 @@ body{
 
 .facts .count-box span, .facts .count-box p, li {
   color: aliceblue;
+}
+
+/* Add this to your CSS file */
+.effect__hover.hover .card__front {
+  transform: rotateY(180deg);
+}
+
+.effect__hover.hover .card__back {
+  transform: rotateY(0deg);
+}
+
+
+.card__front,
+.card__back {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.card__back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
 }

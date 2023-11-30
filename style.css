@@ -56,7 +56,7 @@ body{
   background-color: rgba(10, 3, 17, 0.8) !important; 
 }
 .card-header {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: rgb(227 215 255) !important;
 }
 .card-title, .card-text {
   color: rgb(255, 255, 255);
@@ -250,4 +250,8 @@ body{
 
 .dropdown-menu {
   background-color: rgb(221, 204, 250);
+}
+
+.facts .count-box span, .facts .count-box p, li {
+  color: aliceblue;
 }

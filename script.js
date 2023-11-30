@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     let filterButtons = document.querySelectorAll('.dropdown-item');
     let flipItems = document.querySelectorAll('.flip');
   
@@ -75,5 +75,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
-  });
+});
   

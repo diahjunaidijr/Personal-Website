@@ -74,6 +74,18 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       });
-    });
+  });
 });
   
+document.addEventListener("DOMContentLoaded", function () {
+  let filterItems = document.querySelectorAll('.filter-item li');
+
+  filterItems.forEach(item => {
+      item.addEventListener('click', function () {
+          let link = item.getAttribute('data-link');
+          if (link) {
+              window.open(link, '_blank');
+          }
+      });
+  });
+});

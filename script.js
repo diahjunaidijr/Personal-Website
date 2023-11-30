@@ -50,33 +50,30 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-  document.addEventListener('DOMContentLoaded', function () {
-    let slideIndex = 0;
-    showSlides();
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    let filterButtons = document.querySelectorAll('.dropdown-item');
+    let flipItems = document.querySelectorAll('.flip');
   
-    function showSlides() {
-      let i;
-      const slides = document.getElementsByClassName('mySlides');
-      const dots = document.getElementsByClassName('dot');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        // Hapus kelas 'current' dari semua tombol filter
+        filterButtons.forEach(btn => btn.classList.remove('current'));
+        // Tambahkan kelas 'current' ke tombol filter yang dipilih
+        this.classList.add('current');
   
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-      }
+        let targetFilter = this.getAttribute('data-filter');
   
-      slideIndex++;
-  
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-  
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '');
-      }
-  
-      slides[slideIndex - 1].style.display = 'block';
-      dots[slideIndex - 1].className += ' active';
-  
-      setTimeout(showSlides, 2000); // Change slide every 2 seconds (2000 milliseconds)
-    }
+        // Perlihatkan atau sembunyikan flip card sesuai dengan filter yang dipilih
+        flipItems.forEach(item => {
+          item.classList.remove('d-none');
+          if (targetFilter !== 'all' && !item.classList.contains(targetFilter)) {
+            item.classList.add('d-none');
+          }
+        });
+      });
+    });
   });
-    
+  

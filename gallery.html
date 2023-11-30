@@ -58,26 +58,25 @@
       </div>
     </nav>
     <!-- End of Navbar -->
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Filter
-      </button>
-      <div class="dropdown-menu" aria-labelledby="filterDropdown">
-          <a class="dropdown-item" href="#" data-filter="mountain">Mountain</a>
-          <a class="dropdown-item" href="#" data-filter="lake">Lake</a>
-          <a class="dropdown-item" href="#" data-filter="ocean">Ocean</a>
-          <a class="dropdown-item" href="#" data-filter="natgeo">NatGeo</a>
-          <a class="dropdown-item" href="#" data-filter="redpanda">Red Panda</a>
-      </div>
-  </div>
 
     <div class="card">
       <div class="card-header">Gettin Closer With Me by sharing My gallery</div>
       <div class="card-body">
         <h5 class="card-title">Love Pets, Nature, and Indonesian Foods</h5>
         <p class="card-text"></p>
-      
-<div class="flip">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter
+          </button>
+          <div class="dropdown-menu" aria-labelledby="filterDropdown">
+              <a class="dropdown-item" href="#" data-filter="pet">Pet</a>
+              <a class="dropdown-item" href="#" data-filter="cuisine">Cuisine</a>
+              <a class="dropdown-item" href="#" data-filter="nature">Nature</a>
+              <a class="dropdown-item" href="#" data-filter="design">Design</a>
+              <a class="dropdown-item" href="#" data-filter="science">Science</a>
+          </div>
+      </div>
+<div class="flip flip-design">
     <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
        <h1 class="text-shadow">MOUNTAIN</h1>
     </div>
@@ -86,7 +85,7 @@
        <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
     </div>
 </div>
-<div class="flip">
+<div class="flip nature">
     <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
        <h1 class="text-shadow">LAKE</h1>
     </div>
@@ -95,7 +94,7 @@
        <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
     </div>
 </div>
-<div class="flip">
+<div class="flip nature">
     <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
        <h1 class="text-shadow">OCEAN</h1>
     </div>
@@ -104,7 +103,7 @@
        <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
     </div>
   </div>
-  <div class="flip">
+  <div class="flip science">
     <div class="front" style="background-image: url()">
        <h1 class="text-shadow">NATGEO</h1>
     </div>
@@ -113,7 +112,7 @@
        <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
     </div>
   </div>
-  <div class="flip">
+  <div class="flip pet">
     <div class="front" style="background-image: url()">
        <h1 class="text-shadow">RED PANDA</h1>
     </div>
@@ -122,7 +121,7 @@
        <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
     </div>
   </div>
-  <div class="flip">
+  <div class="flip pet">
     <div class="front" style="background-image: url()">
        <h1 class="text-shadow">OCEAN</h1>
     </div>
@@ -138,21 +137,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="..." crossorigin="anonymous"></script>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper.js, use the appropriate version for Bootstrap 4 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS, use the appropriate version for Bootstrap 4 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>

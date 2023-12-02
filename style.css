@@ -281,3 +281,21 @@ body{
   top: 0;
   left: 0;
 }
+
+.col-md-4 {
+  margin: 24px 0px;
+  /* height: 500px; */
+  width: 100%; /* Use 100% width to ensure consistency */
+}
+
+.card-flipper {
+  height: 100%; /* Make sure the flipper takes the full height of the card */
+}
+
+
+
+.card-img-top {
+  height: 100%; /* Set a fixed height for the images within the card */
+  width: 100%; /* Ensure images take the full width of their container */
+  object-fit: cover; /* Maintain aspect ratio while covering the entire container */
+}
